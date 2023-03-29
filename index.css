@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+:root {
+    /* soft orange */
+    --primary-400: hsl(35, 77%, 62%); 
+    /* soft red */
+    --primary-500: hsl(5, 85%, 63%);
+    /* off white */
+    --neutral-100: hsl(36, 100%, 99%);
+    /* grayish blue */
+    --neutral-400: hsl(233, 8%, 79%);
+    /* dark grayish blue */
+    --neutral-700: hsl(236, 13%, 42%);
+    /* very dark blue */
+    --neutral-800: hsl(240, 100%, 5%);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
