@@ -44,9 +44,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Mobile first workflow
 - CSS Flexbox
 - CSS Grid
+- Vanilla JS
 
 ### Useful resources
 
