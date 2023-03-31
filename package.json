@@ -1,0 +1,11 @@
+{
+  "name": "news_homepage",
+  "version": "1.0.0",
+  "description": "FrontendMentor challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --server --files 'css/*.css' 'html/*.html' 'js/*.js'"
+  },
+  "author": "javi",
+  "license": "MIT"
+}
