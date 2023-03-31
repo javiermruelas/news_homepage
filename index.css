@@ -1,36 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-* {
-    padding: 0;
-    margin: 0;
-}
-html, body {
-    height: 100%;
-}
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-}
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
-input, button, textarea, select {
-    font: inherit;
-}
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-
 :root {
     /* soft orange */
     --primary-400: hsl(35, 77%, 62%); 
@@ -46,10 +15,65 @@ p, h1, h2, h3, h4, h5, h6 {
     --neutral-800: hsl(240, 100%, 5%);
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: var(--neutral-100);
+    padding: 10vw 8vw;
+    display: grid;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
 .attribution { 
     font-size: 11px;
     text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+ul {
+    list-style: none;
+}
+section#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+section#header #logo {
+    width: 10%;
+    height: 100%;
+}
+section#header nav {
+    width: 50%;
+}
+section#header nav ul {
+    display: flex;
+}
+section#header nav ul li {
+    flex-grow: 1;
+    text-align: right;
 }
