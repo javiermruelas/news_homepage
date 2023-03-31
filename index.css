@@ -45,35 +45,51 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
+ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    #desktop-navigation {
+        display: none;
+    }
+    .open-menu,
+    .close-menu {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #mobile {
+        display: none;
+    }
+    section#header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section#header #logo {
+        width: 10%;
+        height: 100%;
+    }
+    section#header nav {
+        width: 50%;
+    }
+    section#header nav ul {
+        display: flex;
+    }
+    section#header nav ul li {
+        flex-grow: 1;
+        text-align: right;
+    }
+}
 
 .attribution { 
     font-size: 11px;
     text-align: center; 
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
-
-ul {
-    list-style: none;
-}
-section#header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-section#header #logo {
-    width: 10%;
-    height: 100%;
-}
-section#header nav {
-    width: 50%;
-}
-section#header nav ul {
-    display: flex;
-}
-section#header nav ul li {
-    flex-grow: 1;
-    text-align: right;
 }

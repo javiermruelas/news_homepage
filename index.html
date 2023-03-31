@@ -12,7 +12,7 @@
     <div id="logo">
       <img src="./assets/images/logo.svg" alt="A single black W with a full stop.">
     </div>
-    <nav>
+    <nav id="desktop-navigation">
       <ul>
         <li>Home</li>
         <li>New</li>
@@ -23,7 +23,25 @@
     </nav>
   </section>
 
-  <main id="front-page-article">
+  <section id="mobile">
+    <div id="open-menu" class="open-menu">
+      <img src="./assets/images/icon-menu.svg" alt="3 horizontal lines to open the menu">
+    </div>
+    <nav id="mobile-navigation" style="display: none;">
+      <div id="close-menu" class="close-menu">
+        <img src="./assets/images/icon-menu-close.svg" alt="An X to close the menu">
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </nav>
+  </section>
+
+  <main id="front-page">
     <article>
       <div id="hero-img">
         <img src="./assets/images/image-web-3-desktop.jpg" alt="Colorful 3D wooden block shapes arranged in a thoughtful way.">
@@ -34,7 +52,7 @@
     </article>
   </main>
 
-  <aside id="right-sidebar">
+  <aside id="suggested-articles">
     <h2>New</h2>
     <div class="new-article">
       <h3>Hydrogen VS Electric Cars</h3>
@@ -50,7 +68,7 @@
     </div>
   </aside>
 
-  <aside id="bottom-sidebar">
+  <section id="related-articles">
     <div class="suggested-article">
       <div class="left">
         <img src="./assets/images/image-retro-pcs.jpg" alt="A retro PC under violet light in a dimly lit room.">
@@ -81,11 +99,28 @@
         <p>How the pandemic has sparked fresh opportunities.</p>
       </div>
     </div>
-  </aside>
+  </section>
 
   <div class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
     <p>Coded by <a href="#">Javi</a>.</p>
   </div>
+
+  <script>
+    let mobileMenu = document.getElementById('mobile-navigation');
+    let openMenuButton = document.getElementById('open-menu');
+    let closeMenuButton = document.getElementById('close-menu');
+
+    function openMobileMenu() {
+      mobileMenu.style.display = 'block';
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.style.display = 'none';
+    }
+
+    openMenuButton.addEventListener('click', openMobileMenu);
+    closeMenuButton.addEventListener('click', closeMobileMenu); 
+  </script>
 </body>
 </html>
