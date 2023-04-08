@@ -32,8 +32,6 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     background-color: var(--neutral-100);
-    padding: 10vw 8vw;
-    display: grid;
 }
 img, picture, video, canvas, svg {
     display: block;
@@ -50,8 +48,15 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        padding: 4vh 4vw;
+    }
     #desktop-navigation {
         display: none;
+    }
+    section#header {
+        display: flex;
+        justify-content: space-between;
     }
     .open-menu,
     .close-menu {

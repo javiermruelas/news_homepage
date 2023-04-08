@@ -12,6 +12,11 @@
     <div id="logo">
       <img src="./assets/images/logo.svg" alt="A single black W with a full stop.">
     </div>
+    <!-- Mobile Only -->
+    <div id="mobile-open-menu" class="open-menu">
+      <img src="./assets/images/icon-menu.svg" alt="3 horizontal lines to open the menu">
+    </div>
+    <!-- Desktop Only -->
     <nav id="desktop-navigation">
       <ul>
         <li>Home</li>
@@ -23,12 +28,10 @@
     </nav>
   </section>
 
-  <section id="mobile">
-    <div id="open-menu" class="open-menu">
-      <img src="./assets/images/icon-menu.svg" alt="3 horizontal lines to open the menu">
-    </div>
-    <nav id="mobile-navigation" style="display: none;">
-      <div id="close-menu" class="close-menu">
+  <!-- Mobile Only -->
+  <section id="mobile-menu" style="display: none;">
+    <nav>
+      <div id="mobile-close-menu" class="close-menu">
         <img src="./assets/images/icon-menu-close.svg" alt="An X to close the menu">
       </div>
       <ul>
@@ -107,9 +110,9 @@
   </div>
 
   <script>
-    let mobileMenu = document.getElementById('mobile-navigation');
-    let openMenuButton = document.getElementById('open-menu');
-    let closeMenuButton = document.getElementById('close-menu');
+    let mobileMenu = document.getElementById('mobile-menu');
+    let openMenuButton = document.getElementById('mobile-open-menu');
+    let closeMenuButton = document.getElementById('mobile-close-menu');
 
     function openMobileMenu() {
       mobileMenu.style.display = 'block';
